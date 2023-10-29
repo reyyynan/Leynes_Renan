@@ -158,3 +158,8 @@ WHERE hero_id = 1;
 
 DELETE FROM public.heroitem
 WHERE hero_id = 1;
+
+SELECT player.player_name, hero.hero_name
+FROM public.player
+JOIN public.hero ON player.hero_id = hero.hero_id
+WHERE hero.is_active = true;
