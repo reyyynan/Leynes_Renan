@@ -14,6 +14,7 @@ CREATE TABLE IF NOT EXISTS public.item
     item_name character varying(255) NOT NULL,
     item_description text,
     item_type character varying(50),
+    item_price DECIMAL(10, 2),
     PRIMARY KEY (item_id)
 );
 
